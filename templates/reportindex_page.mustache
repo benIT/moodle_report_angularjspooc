@@ -1,0 +1,13 @@
+<!--This is a mustache template: do not curly braces for angular because mustache engine will try to interprete it as mustache variables-->
+
+<div ng-app="app">
+    <a class="btn btn-primary" ng-show="showButton" href="#!/home">Home</a>
+    <div id="loaderDiv" loader>
+        <img src="angular/web/img/loader.gif" class="ajax-loader"/>
+    </div>
+    <div class="container">
+        <div ng-view>
+        </div>
+    </div>
+</div>
+

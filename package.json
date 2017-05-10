@@ -1,0 +1,32 @@
+{
+  "name": "moodle-angular-pooc",
+  "version": "0.0.0",
+  "description": "moodle-angular-pooc",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ben.IT",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-load-plugins": "latest",
+    "gulp-rename": "latest",
+    "gulp-csso": "latest",
+    "gulp-less": "latest",
+    "gulp-csscomb": "latest",
+    "gulp-cssbeautify": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-uglify": "latest",
+    "gulp-concat": "latest",
+    "gulp-jshint": "latest"
+  },
+  "dependencies": {
+    "angular": "1.6.4",
+    "angular-chart.js": "1.1.1",
+    "angular-route": "1.6.4",
+    "bootstrap": "^3.3.7",
+    "chart.js": "2.5.0",
+    "isteven-angular-multiselect": "4.0.0",
+    "jquery": "^3.1.1"
+  }
+}

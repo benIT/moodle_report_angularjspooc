@@ -1,0 +1,22 @@
+{
+  "name": "angularjspooc",
+  "authors": [
+    {
+      "name": "ben",
+      "email": "benoit.works@gmail.com"
+    }
+  ],
+  "require": {
+    "phpunit/phpunit": "~4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ReportManager\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-1": {
+      "ReportManager\\Tests": "tests/"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+<div class="lead" ng-controller="reportUserController as report">
+    <h2>{{title}}</h2>
+    <h3>Chart</h3>
+    <canvas id="doughnut"
+            class="chart chart-doughnut"
+            chart-data="data"
+            chart-labels="labels"
+            chart-options="options"
+            width="300"
+            height="120"
+    >
+    </canvas>
+    <h3>Data</h3>
+    <table ng-table="tableParams" show-filter="true" class="table">
+        <tr ng-repeat="data in $data">
+            <td title="'Number of deleted users'" filter="{ deleted: 'number'}" sortable="'deleted'">
+                {{data.deleted}}
+            </td>
+            <td title="'Number of suspended users'" filter="{ suspended: 'number'}" sortable="'suspended'">
+                {{data.suspended}}
+            </td>
+            <td title="'Number of active users'" filter="{ active: 'number'}" sortable="'active'">
+                {{data.active}}
+            </td>
+        </tr>
+    </table>
+</div>

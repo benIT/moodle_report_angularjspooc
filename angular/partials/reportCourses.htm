@@ -1,0 +1,23 @@
+<div class="lead" ng-controller="reportCourseController as report">
+    <h2>{{title}}</h2>
+    {{courseRepartition}}
+    <h3>Chart</h3>
+    <canvas id="base" class="chart-bar"
+            chart-series="series" chart-data="data" chart-labels="labels" chart-options="options">
+    </canvas>
+    <h3>Data</h3>
+    <table ng-table="tableParams" export-csv='csv' show-filter="true" class="table">
+        <tr ng-repeat="users in $data">
+            <td title="'Course name'" filter="{ course: 'text'}" sortable="'course'">
+                {{users.course}}
+            </td>
+            <td title="'User role'" filter="{ role: 'text'}" sortable="'direction'">
+                {{users.role}}
+            </td>
+            <td title="'Number of users'" filter="{ number: 'number'}" sortable="'number'">
+                {{users.number}}
+            </td>
+        </tr>
+    </table>
+    <button type="button" ng-csv="rawData" filename="export.csv">Export</button>
+</div>

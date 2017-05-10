@@ -1,0 +1,9 @@
+<div ng-controller="homeController as home">
+    <h2>{{message}} </h2>
+    <p>{{about}}</p>
+    <div class="row">
+        <div class="col-md-3 report-container" ng-repeat="report in CourseReports">
+            <a href="{{report.url}}">{{report.name}}</a>
+        </div>
+    </div>
+</div>

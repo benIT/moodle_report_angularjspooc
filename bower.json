@@ -1,0 +1,21 @@
+{
+  "name": "moodle-angular-pooc",
+  "description": "moodle-angular-pooc",
+  "main": "",
+  "authors": [
+    "ben.IT"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ng-csv": "^0.3.6",
+    "angular-sanitize": "^1.6.4"
+  }
+}
